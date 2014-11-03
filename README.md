@@ -21,19 +21,19 @@
 	// 写入配置,新建,修改（例）
 	bool PutString("users.name, "nljb");
 
-	// 读取字符串值
+	// 读取字符串值 (支持缺省默认值)
 	string GetString(string, string);
 
 	// 读取字符串值（例）
 	string GetString("users.name", "nljb");
 
-	// 读取数字值
+	// 读取数字值 (支持缺省默认值)
 	int GetInt(string, int);
 
 	// 读取数字值（例）
 	int GetInt("users.size", 100);
 
-	// 读取节点所有KEY值
+	// 读取节点所有KEY值 (不支持缺省默认值,注意返回列表长度)
 	vector<string> GetChildString(string);
 
 	// 读取节点所有KEY值（例）
